@@ -55,3 +55,20 @@ int_var <- c(1L, 6L, 10L)
 log_var <- c(TRUE, FALSE, T, F)
 chr_var <- c("these are", "some strings")
 ```
+
+```{r}
+a <- c("a", 1)
+b <- c(TRUE, 1)
+c <- c(1L, 10)
+d <- c(a, b, c)
+typeof(a)
+typeof(b)
+typeof(c)
+typeof(d)
+# Atomic vectors can only be one type, so these are converted to the highest type by coercion rules (logical -> integer -> double -> complex -> character)
+```
+
+```{r}
+x <- list(1:3, "a", c(TRUE, FALSE, TRUE), c(2.3, 5.9))
+str(x)
+```
