@@ -87,3 +87,14 @@ typeof(x)
 x > 1
 # Is a factor, not an integer
 ```
+
+```{r}
+x <- c(5.4, 6.2, 7.1, 4.8, 7.5)
+names(x) <- c('a', 'b', 'c', 'd', 'e')
+x
+x[2]
+x[2:4]
+x[c(1,2,5)]
+x[6] <- 8.8
+x
+```
