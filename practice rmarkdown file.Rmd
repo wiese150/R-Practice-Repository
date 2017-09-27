@@ -42,4 +42,7 @@ e
 e < 5
 f <- 1:5
 f
+typeof(e)
+length(e)
+attributes(e)
 ```
